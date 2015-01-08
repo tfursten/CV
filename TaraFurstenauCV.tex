@@ -18,19 +18,19 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass{scrartcl}
+\documentclass[10pt]{scrartcl}
+
 
 \reversemarginpar % Move the margin to the left of the page 
-
 \newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
 
 \usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
 \usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
 
-\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
+\renewcommand{\cvheadingfont}{\LARGE\color{OliveGreen}} % Font color of your name at the top
 
 \usepackage{hyperref} % Required for adding links	and customizing them
-\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
+\hypersetup{colorlinks, breaklinks, urlcolor=OliveGreen, linkcolor=OliveGreen} % Set link colors
 
 \newlength{\datebox}\settowidth{\datebox}{Spring 2011} % Set the width of the date box in each block
 
@@ -61,7 +61,7 @@ Tempe, Arizona}
 
 \NewEntry{website}{\href{http://tfursten.github.io}{http://tfursten.github.io}} % Personal website
 
-\NewEntry{phone}{(M) +1 (702) 907 8272} % Phone number(s)
+\NewEntry{google voice}{(M) +1 (702) 907 8272} % Phone number(s)
 
 
 
@@ -106,18 +106,32 @@ Prof. \textsc{Lei Lei}}
 \vspace{0.5em} % Extra space between major sections
 
 %----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\spacedlowsmallcaps{Publications}\vspace{0.5em}
+
+\Description{\MarginText{Submitted}\textbf{Furstenau, T.N.}, and R.A. Cartwright. The effect of the dispersal kernel on isolation-by-distance in a continuous population.}
+
+\Description{\MarginText{Submitted}Novel role of the type I H\textsuperscript{+}-PPase (proton-pumping pyrophosphatase) in phloem loading in \textit{Arabidopsis}}
+
+%----------------------------------------------------------------------------------------
 %	PRESENTATIONS
 %----------------------------------------------------------------------------------------
 
 \spacedlowsmallcaps{Presentations}\vspace{0.5em}
 
-\Description{\MarginText{January 2012}Workshop\ \ $\cdotp$\ Arizona State University\newline
-Title: \textit{The Univector Plasmid-Fusion System: A Cre-loxP recombination-based cloning method}}
+
+%\Description{\MarginText{January 2012}Lab Workshop\ \ $\cdotp$\ Arizona State University\newline
+%Title: \textit{The Univector Plasmid-Fusion System: A Cre-loxP recombination-based cloning method}}
 
 \Description{\MarginText{March 2012}Molecular and Cellular Biology Colloquium\ \ $\cdotp$\ Arizona State University\newline
 Title: \textit{Is the H$^+$-pyrophosphatase involved in the regulation of sucrose transport in plants?"}}
 
 \Description{\MarginText{October 2013}Molecular and Cellular Biology Colloquium\ \ $\cdotp$\ Arizona State University\newline
+Title: \textit{Evolution of Self-Incompatibility: Investigating the role of self-incompatibility systems in the prevention of biparental inbreeding}}
+
+\Description{\MarginText{September 2014}Molecular and Cellular Biology Colloquim\ \ $\cdotp$\
+The Biodesign Institute\newline
 Title: \textit{Evolution of Self-Incompatibility: Investigating the role of self-incompatibility systems in the prevention of biparental inbreeding}}
 
 
@@ -138,15 +152,21 @@ Poster Title: \textit{H$^+$-PPase AVP1 is necessary for phloem development in Ar
 \Description{\MarginText{August 2012}Molecular and Cellular Biology Graduate Student Retreat\ \ $\cdotp$\ Tempe, AZ\newline
 Poster}
 
+\Description{\MarginText{April 2014}Undergraduate Research Poster Symposium\ \ $\cdotp$\ Tempe, AZ\newline
+Poster Title: \textit{Characterization of Transgenic Arabidopsis thaliana overexpressing AVP1 and PLAFP}\newline
+Presented by Sean Wilson (undergraduate mentee)}
+
 \Description{\MarginText{April 2014}Evolution 2014\ \ $\cdotp$\ Raleigh, NC\newline
 Poster Title: \textit{The effect of the dispersal distribution on isolation by distance in a continuous population}}
 \vspace{0.5em} % Extra space between major sections
 
-
+\pagebreak
 %----------------------------------------------------------------------------------------
 %	TEACHING EXPERIENCE
 %----------------------------------------------------------------------------------------
 \spacedlowsmallcaps{Teaching Experience}\vspace{0.5em}
+
+
 
 \Description{\MarginText{Fall 2010}MBB 343\ \ $\cdotp$\ Genetic Engineering and Society\ \ $\cdotp$\ Laboratory\newline
 \textit{Teaching Associate\ \ $\cdotp$\ Arizona State University}}
@@ -157,16 +177,7 @@ Poster Title: \textit{The effect of the dispersal distribution on isolation by d
 \Description{\MarginText{Summer 2011}BIO 182\ \ $\cdotp$\ General Biology II\ \ $\cdotp$\ Laboratory\newline
 \textit{Teaching Associate\ \ $\cdotp$\ Arizona State University}}
 
-\Description{\MarginText{Fall 2011}BIO 340\ \ $\cdotp$\ General Genetics\ \ $\cdotp$\ Recitation\newline
-\textit{Teaching Associate\ \ $\cdotp$\ Arizona State University}}
-
-\Description{\MarginText{Spring 2012}BIO 340\ \ $\cdotp$\ General Genetics\ \ $\cdotp$\ Recitation\newline
-\textit{Teaching Associate\ \ $\cdotp$\ Arizona State University}}
-
-\Description{\MarginText{Fall 2012}BIO 340\ \ $\cdotp$\ General Genetics\ \ $\cdotp$\ Recitation\newline
-\textit{Teaching Associate\ \ $\cdotp$\ Arizona State University}}
-
-\Description{\MarginText{Spring 2013}BIO 340\ \ $\cdotp$\ General Genetics\ \ $\cdotp$\ Recitation\newline
+\Description{\MarginText{Fall 2011-\\Spring 2013}BIO 340\ \ $\cdotp$\ General Genetics\ \ $\cdotp$\ Recitation\newline
 \textit{Teaching Associate\ \ $\cdotp$\ Arizona State University}}
 
 \Description{\MarginText{Fall 2013}PLB 108\ \ $\cdotp$\ Concepts in Plant Biology\ \ $\cdotp$\ iCourse\newline
@@ -175,6 +186,15 @@ Poster Title: \textit{The effect of the dispersal distribution on isolation by d
 
 \Description{\MarginText{Spring 2014}MBB 355\ \ $\cdotp$\ Introduction to Computational Molecular Biology\ \ $\cdotp$\ Lecture\newline
 \textit{Innovative Teaching Associate\ \ $\cdotp$\ Arizona State University}}
+
+\Description{\MarginText{Fall 2014}BIO 340\ \ $\cdotp$\ General Genetics \ \ $\cdotp$\ Active Learning Recitation\newline
+\textit{Head Teaching Associate\ \ $\cdotp$\ Arizona State University}}
+
+\Description{\MarginText{Honors Thesis Mentor}Sean Wilson \newline Thesis: Wilson, S., \textbf{Furstenau, T.}, and R. Gaxiola. Characterization of Transgenic \textit{Arabidopsis thaliana} Overexpressing a Type I H\textsuperscript{+} Pyrophosphatase and the Phloem Lipid-Associated Family Protein. \href{http://hdl.handle.net/2286/R.I.23607}{http://hdl.handle.net/2286/R.I.23607} \newline \textit{Currently a graduate student at Harvard University}}
+
+\Description{\MarginText{Undergraduate Research Mentor}Matthew Hilton (\textit{currently a graduate student at Arizona State University})\ \ $\cdotp$\ Rachel Livingston\ \ $\cdotp$\ Denise Godinez\ \ $\cdotp$\ Kate Graen\ \ $\cdotp$\ Diana Arroyo}
+
+
 \vspace{0.5em} % Extra space between major sections
 
 
@@ -212,8 +232,12 @@ Poster Title: \textit{The effect of the dispersal distribution on isolation by d
 %----------------------------------------------------------------------------------------
 \spacedlowsmallcaps{Professional Development}\vspace{0.5em}
 
+\Description{Univector Plasmid-Fusion System training with Kendal Hirschi\newline
+ \textit{Children’s Nutritional Research Center\ \ $\cdotp$\ Baylor College of Medicine\ \ $\cdotp$\ Houston, TX}}
+
 \Description{Next Generation Population Genomics for Nonmodel Taxa Workshop\newline
- \textit{American Genetics Association}}
+ \textit{American Genetics Association\ \ $\cdotp$\ Cornell University\ \ $\cdotp$\ Ithica, NY}}
+
 
 \vspace{0.5em} % Extra space between major sections
 
@@ -222,9 +246,9 @@ Poster Title: \textit{The effect of the dispersal distribution on isolation by d
 %	COMPUTER SKILLS
 %----------------------------------------------------------------------------------------
 
-\spacedlowsmallcaps{Computer Skills}\vspace{0.5em}
+\spacedlowsmallcaps{Programming Languages}\vspace{0.5em}
 
-\Description{C++, \textsc{python}, R, Linux, \LaTeX, \textsc{html/css}}
+\Description{C++, \textsc{python}, R, Linux, \LaTeX, \textsc{html/css, OpenBUGS, Mathematica}}
 
 
 
