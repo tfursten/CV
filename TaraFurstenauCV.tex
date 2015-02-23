@@ -1,265 +1,164 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Classicthesis-Styled CV
-% LaTeX Template
-% Version 1.0 (22/2/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Alessandro Plasmati
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{charter}
+\usepackage{hyperref}
+\usepackage{tabularx}
+%\renewcommand{\familydefault}{\sfdefault}
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+\usepackage[document]{ragged2e}
 
-\documentclass[9pt]{scrartcl}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[margin=1in]{geometry}
+\pagestyle{fancy}
+\hypersetup{colorlinks, breaklinks, urlcolor=OliveGreen, linkcolor=OliveGreen}
+\fancyhf{}
+\rhead{\Large\scshape{Curriculum Vitae}}
+\lhead{\Large\scshape{Tara N. Furstenau}}
+\cfoot{\thepage}
 
-
-\reversemarginpar % Move the margin to the left of the page 
-\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
-
-\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
-\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
-
-\renewcommand{\cvheadingfont}{\LARGE\color{OliveGreen}} % Font color of your name at the top
-
-\usepackage{hyperref} % Required for adding links	and customizing them
-\hypersetup{colorlinks, breaklinks, urlcolor=OliveGreen, linkcolor=OliveGreen} % Set link colors
-
-\newlength{\datebox}\settowidth{\datebox}{Spring 2011} % Set the width of the date box in each block
-
-\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
-\vspace{0.25em}} % Add some white space after each new entry
-
-\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{0.5em}} % Define a command for descriptions of each entry - change spacing and font sizes here
-
-%----------------------------------------------------------------------------------------
-
+\titleformat{\section}
+	{\large\scshape\bfseries}{}{1em}{}
+\titleformat{\subsection}
+	{\normalsize\bfseries}{}{1em}{}
 \begin{document}
-
-\thispagestyle{empty} % Stop the page count at the bottom of the first page
-
-%----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{cv}{\spacedallcaps{Tara Furstenau}}\vspace{1.5em} % Your name
-\Description{Biodesign Institute\newline
-Center for Evolutionary Medicine and Informatics\newline
-Arizona State University\newline
-Tempe, Arizona}
-
-\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} % Personal information heading
-
-\NewEntry{email}{\href{mailto:tfursten@asu.edu}{tfursten@asu.edu}} % Email address
-
-\NewEntry{website}{\href{http://tfursten.github.io}{http://tfursten.github.io}} % Personal website
-
-\NewEntry{google voice}{(M) +1 (702) 907 8272} % Phone number(s)
-
-
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-
-\spacedlowsmallcaps{Education}\vspace{0.5em}
-
-\NewEntry{2010-}{Arizona State University, Tempe}
-
-\Description{\MarginText{Ph.D.}Expected 2015 \ $\cdotp$\ \ Molecular and Cellular Biology\ \ \ $\cdotp$ School of Life Sciences\newline Thesis: \textit{Evolution of Self-Incompatibility in Plant Populations}\newline
-Advisor: Prof.~Reed \textsc{Cartwright}}
-
-%------------------------------------------------
-
-\NewEntry{2008-2010}{Arizona State University, Tempe}
-
-\Description{\MarginText{B.S}Bioinformatics and Genomics\ \ $\cdotp$\ School of Life Sciences\newline
-\textit{Magnum Cum Laude}\ \ $\cdotp$\ \textit{Dean's List}}
-
-
-%------------------------------------------------
-
-%----------------------------------------------------------------------------------------
-%	RESEARCH EXPERIENCE
-%----------------------------------------------------------------------------------------
-\spacedlowsmallcaps{Research Experience}\vspace{0.5em}
-
-\Description{\MarginText{2013-}Graduate Research\newline
-Prof. \textsc{Reed Cartwright}\newline
-Developed simulations to investigate the evolution of self-incompatibility systems in plant populations}
-
-\Description{\MarginText{2010-2013}Graduate Research Assistant\newline
-Prof. \textsc{Roberto Gaxiola}\newline
-Investigated the role of the proton pumping pyrophosphatase, \textit{AVP1}, in sucrose transport in \textit{Arabidopsis thaliana}}
-
-\Description{\MarginText{2009-2010}Undergraduate Student Researcher\newline
-Prof. \textsc{Lei Lei}}
-%Neural development research using conditional knockout mice.}
-
-\vspace{0.5em} % Extra space between major sections
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
-\spacedlowsmallcaps{Publications}\vspace{0.5em}
-
-\Description{\MarginText{Submitted}\textbf{Furstenau, T.N.}, and R.A. Cartwright. The effect of the dispersal kernel on isolation-by-distance in a continuous population.}
-
-\Description{\MarginText{February 2015}GA Pizzio, J Paez-Valencia, AS. Khadilkar
-, K Regmi, A Patron-Soberano, S Zhang, J Sanchez-Lares, \textbf{T Furstenau}, J Li, C Sanchez-Gomez, P Valencia-Mayoral, UP Yadav, BG Ayre and RA Gaxiola (2015).\textit{ Arabidopsis} proton-pumping pyrophosphatase \textit{AVP1} expresses strongly in phloem where it is required for PPi metabolism and photosynthate partitioning. \textit{Plant Physiology}}
-
-%----------------------------------------------------------------------------------------
-%	PRESENTATIONS
-%----------------------------------------------------------------------------------------
-
-\spacedlowsmallcaps{Presentations}\vspace{0.5em}
-
-
-%\Description{\MarginText{January 2012}Lab Workshop\ \ $\cdotp$\ Arizona State University\newline
-%Title: \textit{The Univector Plasmid-Fusion System: A Cre-loxP recombination-based cloning method}}
-
-\Description{\MarginText{March 2012}Molecular and Cellular Biology Colloquium\ \ $\cdotp$\ Arizona State University\newline
-Title: \textit{Is the H$^+$-pyrophosphatase involved in the regulation of sucrose transport in plants?"}}
-
-\Description{\MarginText{October 2013}Molecular and Cellular Biology Colloquium\ \ $\cdotp$\ Arizona State University\newline
-Title: \textit{Evolution of Self-Incompatibility: Investigating the role of self-incompatibility systems in the prevention of biparental inbreeding}}
-
-\Description{\MarginText{September 2014}Molecular and Cellular Biology Colloquim\ \ $\cdotp$\
-The Biodesign Institute\newline
-Title: \textit{Evolution of Self-Incompatibility: Investigating the role of self-incompatibility systems in the prevention of biparental inbreeding}}
-
-
-\vspace{0.5em} % Extra space between major sections
-
-
-%------------------------------------------------
-%	POSTERS AND ABSTRACTS
-%------------------------------------------------
-\spacedlowsmallcaps{Posters and Abstracts}\vspace{0.5em}
-
-\Description{\MarginText{May 2012}Children’s Nutritional Research Center\ \ $\cdotp$\ Houston, TX\newline
-Meeting Abstract: \textit{H$^+$-PPase AVP1 is necessary for phloem development in Arabidopsis}}
-
-\Description{\MarginText{July 2012}Annual Meeting of the American Society of Plant Biologists\ \ $\cdotp$\ Austin, TX\newline
-Poster Title: \textit{H$^+$-PPase AVP1 is necessary for phloem development in Arabidopsis thaliana}}
-
-\Description{\MarginText{August 2012}Molecular and Cellular Biology Graduate Student Retreat\ \ $\cdotp$\ Tempe, AZ\newline
-Poster}
-
-\Description{\MarginText{April 2014}Undergraduate Research Poster Symposium\ \ $\cdotp$\ Tempe, AZ\newline
-Poster Title: \textit{Characterization of Transgenic Arabidopsis thaliana overexpressing AVP1 and PLAFP}\newline
-Presented by Sean Wilson (undergraduate mentee)}
-
-\Description{\MarginText{April 2014}Evolution 2014\ \ $\cdotp$\ Raleigh, NC\newline
-Poster Title: \textit{The effect of the dispersal distribution on isolation by distance in a continuous population}}
-\vspace{0.5em} % Extra space between major sections
-\pagebreak
-%----------------------------------------------------------------------------------------
-%	TEACHING EXPERIENCE
-%----------------------------------------------------------------------------------------
-\spacedlowsmallcaps{Teaching Experience}\vspace{0.5em}
-
-
-
-\Description{\MarginText{Fall 2010}MBB 343\ \ $\cdotp$\ Genetic Engineering and Society\ \ $\cdotp$\ Laboratory\newline
-\textit{Teaching Associate\ \ $\cdotp$\ Arizona State University}}
-
-\Description{\MarginText{Spring 2011}BIO 181\ \ $\cdotp$\ General Biology I\ \ $\cdotp$\ Laboratory\newline
-\textit{Teaching Associate\ \ $\cdotp$\ Arizona State University}}
-
-\Description{\MarginText{Summer 2011}BIO 182\ \ $\cdotp$\ General Biology II\ \ $\cdotp$\ Laboratory\newline
-\textit{Teaching Associate\ \ $\cdotp$\ Arizona State University}}
-
-\Description{\MarginText{Fall 2011-\\Spring 2013}BIO 340\ \ $\cdotp$\ General Genetics\ \ $\cdotp$\ Recitation\newline
-\textit{Teaching Associate\ \ $\cdotp$\ Arizona State University}}
-
-\Description{\MarginText{Fall 2013}PLB 108\ \ $\cdotp$\ Concepts in Plant Biology\ \ $\cdotp$\ iCourse\newline
-\textit{Instructor\ \ $\cdotp$\ Arizona State University}\newline
-\textit{*Developed course materials and produced instructional videos}}
-
-\Description{\MarginText{Spring 2014}MBB 355\ \ $\cdotp$\ Introduction to Computational Molecular Biology\ \ $\cdotp$\ Lecture\newline
-\textit{Innovative Teaching Associate\ \ $\cdotp$\ Arizona State University}}
-
-\Description{\MarginText{Fall 2014}BIO 340\ \ $\cdotp$\ General Genetics \ \ $\cdotp$\ Active Learning Recitation\newline
-\textit{Head Teaching Associate\ \ $\cdotp$\ Arizona State University}}
-
-\Description{\MarginText{Honors Thesis Mentor}Sean Wilson \newline Thesis: Wilson, S., \textbf{Furstenau, T.}, and R. Gaxiola. Characterization of Transgenic \textit{Arabidopsis thaliana} Overexpressing a Type I H\textsuperscript{+} Pyrophosphatase and the Phloem Lipid-Associated Family Protein. \href{http://hdl.handle.net/2286/R.I.23607}{http://hdl.handle.net/2286/R.I.23607} \newline \textit{Currently a graduate student at Harvard University}}
-
-\Description{\MarginText{Undergraduate Research Mentor}Matthew Hilton (\textit{currently a graduate student at Arizona State University})\ \ $\cdotp$\ Rachel Livingston\ \ $\cdotp$\ Denise Godinez\ \ $\cdotp$\ Kate Graen\ \ $\cdotp$\ Diana Arroyo}
-
-
-\vspace{0.5em} % Extra space between major sections
-
-
-%----------------------------------------------------------------------------------------
-%	Service
-%----------------------------------------------------------------------------------------
-\spacedlowsmallcaps{Service}\vspace{0.5em}
-
-\Description{Phosphorus Sustainability Research Coordination Network\ \ $\cdotp$\ Core Participant}
-\Description{Ask a Biologist\ \ $\cdotp$\ Correspondent}
-\Description{Green Labs Initiative\ \ $\cdotp$\ Coordinator/Spokesperson}
-\Description{Obama Scholars\ \ $\cdotp$\ Mentor}		
-
-\vspace{0.5em} % Extra space between major sections
-
-
-%----------------------------------------------------------------------------------------
-%	PROFESSIONAL ORGANIZATIONS
-%----------------------------------------------------------------------------------------
-\spacedlowsmallcaps{Professional Organizations}\vspace{0.5em}
-
-\Description{American Association for the Advancement of Science}
-\Description{American Society of Plant Biologists}
-\Description{Society for the Study of Evolution}
-\Description{Society for Molecular Biology and Evolution}
-\Description{Graduate Integrative Society for Environment Interdisciplinary Research}
-\Description{Central Arizona Chapter of the Association for Women in Science}
-
-
-
-\vspace{0.5em} % Extra space between major sections
-
-
-%----------------------------------------------------------------------------------------
-%	PROFESSIONAL DEVELOPMENT
-%----------------------------------------------------------------------------------------
-\spacedlowsmallcaps{Professional Development}\vspace{0.5em}
-
-\Description{Univector Plasmid-Fusion System training with Kendal Hirschi\newline
- \textit{Children’s Nutritional Research Center\ \ $\cdotp$\ Baylor College of Medicine\ \ $\cdotp$\ Houston, TX}}
-
-\Description{Next Generation Population Genomics for Nonmodel Taxa Workshop\newline
- \textit{American Genetics Association\ \ $\cdotp$\ Cornell University\ \ $\cdotp$\ Ithica, NY}}
-
-
-\vspace{0.5em} % Extra space between major sections
-
-
-%----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS
-%----------------------------------------------------------------------------------------
-
-\spacedlowsmallcaps{Programming Languages}\vspace{0.5em}
-
-\Description{\textsc{C++, python, R, bash, \LaTeX, html/css, OpenBUGS, Mathematica}}
-
-
-
-
-%------------------------------------------------
-
-\vspace{0.5em} % Extra space between major sections
-
-
-
-\end{cv}
-
+%--------------------------------------------------------------------------------------------
+%                                CONTACT INFORMATION
+%--------------------------------------------------------------------------------------------
+\section*{Contact Information}
+\begin{tabular}[c]{p{3.5in}ll}
+The Biodesign Institute& Phone & +1 (702) 907-8272\\
+Arizona State University& Email & \href{mailto:tfursten@asu.edu}{tfursten@asu.edu}\\
+PO Box 875301 & Website & \href{http://tfursten.github.io}{http://tfursten.github.io}\\
+Tempe, Arizona 85287-5301&&\\
+%Phone & +1 (702) 907-8272\\
+%Email & \href{mailto:tfursten@asu.edu}{tfursten@asu.edu}\\
+%Website & \href{http://tfursten.github.io}{http://tfursten.github.io}\\
+\end{tabular}
+%--------------------------------------------------------------------------------------------
+%                                EDUCATION
+%--------------------------------------------------------------------------------------------
+\section*{Education}
+\begin{tabular}[c]{lllll}
+Ph.D.& Molecular and Cellular Biology& Arizona State University&Exp. 2016\\
+&\multicolumn{3}{l}{Advisor: Reed Cartwright}\\
+B.S.&Bioinformatics and Genomics&Arizona State University& 2010\\
+&\multicolumn{3}{l}{Magnum Cum Laude}
+\end{tabular}
+%--------------------------------------------------------------------------------------------
+%                                PUBLICATIONS
+%--------------------------------------------------------------------------------------------
+\section*{Publications}
+%\subsection*{Submitted}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\linewidth}{l X}
+&\textbf{Furstenau, TN}, and RA Cartwright (2015). The effect of the dispersal kernel on isolation-by-distance in a continuous population. Manuscript submitted for publication. \href{http://arxiv.org/abs/1501.01085}{http://arxiv.org/abs/1501.01085}\\
+&GA Pizzio, J Paez-Valencia, AS. Khadilkar, K Regmi, A Patron-Soberano, S Zhang, J Sanchez-Lares, \textbf{T Furstenau}, J Li, C Sanchez-Gomez, P Valencia-Mayoral, UP Yadav, BG Ayre and RA Gaxiola (2015).\textit{ Arabidopsis} proton-pumping pyrophosphatase \textit{AVP1} expresses strongly in phloem where it is required for PPi metabolism and photosynthate partitioning. \textit{Plant Physiology}. Advance online publication. \href{http:/​/​dx.​doi.​org/​10.​1104/​pp.​114.​254342}{doi:10.1104/pp.114.254342}\\
+\end{tabularx}
+%\subsection*{Published}
+%\begin{tabular}[c]{lp{6.5in}}
+%--------------------------------------------------------------------------------------------
+%                                PRESENTATIONS
+%--------------------------------------------------------------------------------------------
+\section*{Presentations}
+\subsection*{Talks}
+\renewcommand{\arraystretch}{1}
+\begin{tabularx}{\linewidth}{l X}
+2014&\textit{Evolution of Self-Incompatibility: Investigating the role of self-incompatibility systems in the prevention of biparental inbreeding.}\\
+&Molecular and Cellular Biology Colloquium $\cdotp$ The Biodesign Institute\\
+2013&\textit{Evolution of Self-Incompatibility: Investigating the role of self-incompatibility systems in the prevention of biparental inbreeding}\\
+&Molecular and Cellular Biology Colloquium $\cdotp$ Arizona State University\\
+2012&\textit{Is the H$^+$-pyrophosphatase involved in the regulation of sucrose transport in plants?}\\
+&Molecular and Cellular Biology Colloquium $\cdotp$ Arizona State University\\
+\end{tabularx}
+\subsection*{Posters and Abstracts}
+\begin{tabularx}{\linewidth}{l X}
+2015&\textit{Bayesian estimation of neighborhood size using composite marginal likelihoods}\\
+&Society for Molecular Biology and Evolution $\cdotp$ Vienna, Austria\\
+2014&\textit{The effect of the dispersal distribution on isolation-by-distance in a continuous population}\\
+&Society for the Study of Evolution $\cdotp$ Raleigh, NC\\
+2014&\textit{Characterization of Transgenic Arabidopsis thaliana overexpressing AVP1 and PLAFP}\\
+&Undergraduate Research Poster Symposium $\cdotp$ Arizona State University $\cdotp$ Tempe, AZ\\
+&Presented by Sean Wilson (undergraduate mentee)\\
+2012&\textit{H$^+$-PPase AVP1 is necessary for phloem development in Arabidopsis thaliana}\\
+&Molecular and Cellular Biology Graduate Student Retreat $\cdotp$ Tempe, AZ\\
+2012&\textit{H$^+$-PPase AVP1 is necessary for phloem development in Arabidopsis thaliana}\\
+&American Society of Plant Biologists $\cdotp$ Austin, TX\\
+\end{tabularx}
+
+%--------------------------------------------------------------------------------------------
+%                                RESEARCH EXPERIENCE
+%--------------------------------------------------------------------------------------------
+\section*{Research Experience}
+\begin{tabularx}{\linewidth}{lX}
+2013-Present&Graduate Student with Reed Cartwright\\
+&Center for Human and Comparative Genomics\\
+&The Biodesign Institute\\
+&Arizona State University $\cdotp$ Tempe, AZ\\
+2010-2013&Research Assistant with Roberto Gaxiola\\
+&School of Life Science\\
+&Arizona State University $\cdotp$ Tempe, AZ\\
+2009-2010&Undergraduate Student Researcher with Lei Lei\\
+&School of Life Science\\
+&Arizona State University $\cdotp$ Tempe, AZ\\
+\end{tabularx}
+
+
+%--------------------------------------------------------------------------------------------
+%                                TEACHING EXPERIENCE
+%--------------------------------------------------------------------------------------------
+\section*{Teaching Experience}
+\subsection*{Arizona State University}
+Courses:\\
+\begin{tabularx}{\linewidth}{llX}
+2014&General Genetics& Head TA\\
+2014& Introduction to Computational Molecular Biology& Innovative TA\\
+2013&Concepts in Plant Biology iCourse& Instructor\\
+2011-2013&General Genetics&Teaching Associate\\
+2011&General Biology I \& 2 Laboratory& Teaching Associate\\
+2010&Genetic Engineering and Society Laboratory&Teaching Associate\\\\
+\end{tabularx}
+Undergraduate Mentorship:\\
+\begin{tabularx}{\linewidth}{lX}
+2011-2013&Honors Thesis Mentor $\cdotp$ Sean Wilson\\
+&Wilson S, Furstenau T, and R Gaxiola. Characterization of Transgenic \textit{Arabidopsis thaliana} Overexpressing a Type I H\textsuperscript{+} Pyrophosphatase and the Phloem Lipid-Associated Family Protein. \href{http://hdl.handle.net/2286/R.I.23607}{http://hdl.handle.net/2286/R.I.23607}\\
+\end{tabularx}
+
+
+
+%--------------------------------------------------------------------------------------------
+%                                SERVICE
+%--------------------------------------------------------------------------------------------
+\section*{Service}
+\begin{tabularx}{\linewidth}{lX}
+2010-present &Ask-A-Biologist Volunteer Coorespondent\\
+2011-2013&Green Labs Initiative Coordinator and Promoter\\
+2012-2013&Phosphorus Sustainability Research Coordination Network Core Participant\\
+2011-2012&Obama Scholars Mentor\\
+\end{tabularx}
+%--------------------------------------------------------------------------------------------
+%                                SOCIETY MEMBERSHIPS
+%--------------------------------------------------------------------------------------------
+\section*{Society Memberships}
+Society for the Study of Evolution\\
+Society for Molecular Biology and Evolution\\
+Graduate Integrative Society for Environmental Interdisciplinary Research\\
+Central Arizona Chapter of the Association for Women in Science
+%--------------------------------------------------------------------------------------------
+%                                PROFESSIONAL DEVELOPMENT
+%--------------------------------------------------------------------------------------------
+\section*{Professional Development}
+\begin{tabularx}{\linewidth}{l X}
+2013&Next Generation Population Genomics for Non-model Taxa Workshop\\
+&American Genetics Association $\cdotp$ Cornell University $\cdotp$ Ithica, NY\\
+
+2011& Univector Plasmid-Fusion System training with Kendal Hirschi\\
+&Childrens Nutritional Research Center $\cdotp$ Baylor College of Medicine $\cdotp$ Houston, TX\\
+
+\end{tabularx}
+%--------------------------------------------------------------------------------------------
+%                                PROGRAMMING LANGUAGES
+%--------------------------------------------------------------------------------------------
+\section*{Programming Languages}
+\textsc{C++, python, R, bash, \LaTeX, html/css, OpenBUGS, Mathematica}
 \end{document}
