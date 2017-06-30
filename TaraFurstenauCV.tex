@@ -1,194 +1,271 @@
-\documentclass[11pt]{article}
-\usepackage{titlesec}
-\usepackage{fancyhdr}
-\usepackage{charter}
-\usepackage{hyperref}
-\usepackage{tabularx}
-%\renewcommand{\familydefault}{\sfdefault}
+% -- Encoding UTF-8 without BOM
+% -- XeLaTeX => PDF (BIBER)
 
-\usepackage[document]{ragged2e}
+\documentclass[]{cv-style}          % Add 'print' as an option into the square bracket to remove colours from this template for printing. 
+                                    % Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
 
-\usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[margin=1in]{geometry}
-\pagestyle{fancy}
-\hypersetup{colorlinks, breaklinks, urlcolor=OliveGreen, linkcolor=OliveGreen}
-\fancyhf{}
-\rhead{\Large\scshape{Curriculum Vitae}}
-\lhead{\Large\scshape{Tara N. Furstenau, Ph.D.}}
-\cfoot{\thepage}
+\sethyphenation[variant=british]{english}{} % Add words between the {} to avoid them to be cut 
 
-\titleformat{\section}
-	{\large\scshape\bfseries}{}{1em}{}
-\titleformat{\subsection}
-	{\normalsize\bfseries}{}{1em}{}
+
 \begin{document}
-%--------------------------------------------------------------------------------------------
-%                                CONTACT INFORMATION
-%--------------------------------------------------------------------------------------------
-\section*{Contact Information}
-\begin{tabular}[c]{p{3.5in}ll}
-The School of Informatics,\\Computing, and Cyber Systems& Phone & +1 (702) 907-8272\\
-Northern Arizona University& Email & \href{mailto:tara.furstenau@nau.edu}{tara.furstenau@nau.edu}\\
-PO Box 5693 & Website & \href{http://tfursten.github.io}{http://tfursten.github.io}\\
-Flagstaff, AZ 86011& Github &\href{https://github.com/tfursten}{https://github.com/tfursten}\\
-%Phone & +1 (702) 907-8272\\
-%Email & \href{mailto:tfursten@asu.edu}{tfursten@asu.edu}\\
-%Website & \href{http://tfursten.github.io}{http://tfursten.github.io}\\
-\end{tabular}
 
-%--------------------------------------------------------------------------------------------
-%                                RESEARCH FOCUS
-%--------------------------------------------------------------------------------------------
-%\section*{Current Research}
-%I am a computational biologist interested in studying evolution and population genetics in a spatial context. Most of my research focuses on consequences of isolation-by-distance, a phenomenon which results in the formation of spatial genetic structure in a population due to limited dispersal. I have developed several spatially-explicit individual based simulations to better understand how isolation-by-distance is affected by different dispersal distributions and different mating types. I am also working on developing a Bayesian method for estimating neighborhood size which roughly quantifies the spatial-genetic structure in a population due to isolation-by-distance.
+\header{Tara }{Furstenau, Ph.D. }           % Your name
+\lastupdated
 
-%--------------------------------------------------------------------------------------------
-%                                RESEARCH EXPERIENCE
-%--------------------------------------------------------------------------------------------
-\section*{Research Experience}
-\begin{tabularx}{\linewidth}{lX}
-2016-Present& Postdoctoral Scholar with Viacheslav Fofanov\\
-&School of Informatics, Computing, and Cyber Systems\\ \vspace{2mm}
-&Northern Arizona University $\cdotp$ Flagstaff, AZ\\
-2013-2016&Graduate Student with Reed Cartwright\\
-&Center for Human and Comparative Genomics\\
-&The Biodesign Institute\\ \vspace{2mm}
-&Arizona State University $\cdotp$ Tempe, AZ\\
-2010-2013&Research Assistant with Roberto Gaxiola\\
-&School of Life Science\\ \vspace{2mm}
-&Arizona State University $\cdotp$ Tempe, AZ\\
-2009-2010&Undergraduate Student Researcher with Lei Lei\\
-&School of Life Science\\
-&Arizona State University $\cdotp$ Tempe, AZ\\
-\end{tabularx}
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION  -- In the aside, each new line forces a line break
+%----------------------------------------------------------------------------------------
 
-%--------------------------------------------------------------------------------------------
-%                                EDUCATION
-%--------------------------------------------------------------------------------------------
-
-
-\section*{Education}
-\begin{tabular}[c]{lllll}
-Ph.D.& Molecular and Cellular Biology& Arizona State University&2016\\
-&\multicolumn{3}{l}{Advisor: Reed Cartwright}\\
-B.S.&Bioinformatics and Genomics&Arizona State University& 2010\\
-&\multicolumn{3}{l}{\textit{magna cum laude}}
-\end{tabular}
-%--------------------------------------------------------------------------------------------
-%                                PUBLICATIONS
-%--------------------------------------------------------------------------------------------
-\section*{Publications}
-%\subsection*{Submitted}
-\renewcommand{\arraystretch}{1.5}
-\begin{tabularx}{\linewidth}{l X}
-&\textbf{Furstenau, TN}, and RA Cartwright (2016). The effect of the dispersal kernel on isolation-by-distance in a continuous population. \textit{PeerJ} 4:e1848. \href{https://doi.org/10.7717/peerj.1848}{doi:10.7717/peerj.1848}\\
-
-&Pizzio GA, Paez-Valencia J, Khadilkar AS, Regmi K, Patron-Soberano A, Zhang S, Sanchez-Lares J, \textbf{Furstenau T}, Li J, Sanchez-Gomez C, Valencia-Mayoral P, Yadav UP, Ayre BG and RA Gaxiola (2015).\textit{ Arabidopsis} proton-pumping pyrophosphatase \textit{AVP1} expresses strongly in phloem where it is required for PPi metabolism and photosynthate partitioning. \textit{Plant Physiology} \textbf{167}:1541-1553. \href{http:/​/​dx.​doi.​org/​10.​1104/​pp.​114.​254342}{doi:10.1104/pp.114.254342}\\
-\end{tabularx}
-%\subsection*{Published}
-%\begin{tabular}[c]{lp{6.5in}}
-%--------------------------------------------------------------------------------------------
-%                                PRESENTATIONS
-%--------------------------------------------------------------------------------------------
-\section*{Presentations}
-\subsection*{Talks}
-\renewcommand{\arraystretch}{1}
-\begin{tabularx}{\linewidth}{l X}
-\textbf{2015}&\textit{Bayesian estimation of neighborhood size using composite marginal likelihoods}\\
-&\textbf{Society for Molecular Biology and Evolution} $\cdotp$ Vienna, Austria\\
-2015&\textit{Bayesian estimation of neighborhood size using composite marginal likelihoods}\\
-&Molecular and Cellular Biology Colloquium $\cdot$ The Biodesign Institute\\
-2014&\textit{Evolution of Self-Incompatibility: Investigating the role of self-incompatibility systems in the prevention of biparental inbreeding.}\\
-&Molecular and Cellular Biology Colloquium $\cdotp$ The Biodesign Institute\\
-2013&\textit{Evolution of Self-Incompatibility: Investigating the role of self-incompatibility systems in the prevention of biparental inbreeding}\\
-&Molecular and Cellular Biology Colloquium $\cdotp$ Arizona State University\\
-2012&\textit{Is the H$^+$-pyrophosphatase involved in the regulation of sucrose transport in plants?}\\
-&Molecular and Cellular Biology Colloquium $\cdotp$ Arizona State University\\
-\end{tabularx}
-\subsection*{Posters and Abstracts}
-\begin{tabularx}{\linewidth}{l X}
-2014&\textit{The effect of the dispersal distribution on isolation-by-distance in a continuous population}\\
-&Society for the Study of Evolution $\cdotp$ Raleigh, NC\\
-2014&\textit{Characterization of Transgenic Arabidopsis thaliana overexpressing AVP1 and PLAFP}\\
-&Undergraduate Research Poster Symposium $\cdotp$ Arizona State University $\cdotp$ Tempe, AZ\\
-&Presented by Sean Wilson (undergraduate mentee)\\
-2012&\textit{H$^+$-PPase AVP1 is necessary for phloem development in Arabidopsis thaliana}\\
-&Molecular and Cellular Biology Graduate Student Retreat $\cdotp$ Tempe, AZ\\
-2012&\textit{H$^+$-PPase AVP1 is necessary for phloem development in Arabidopsis thaliana}\\
-&American Society of Plant Biologists $\cdotp$ Austin, TX\\
-\end{tabularx}
+\begin{aside}
+%
+\section{Contact}
+The School of Informatics, Computing, and Cyber Systems
+Northern Arizona University
+PO Box 5693
+Flagstaff, AZ 86011
+~
+\textbf{Email:
+\href{mailto:tara.furstenau@nau.edu}{tara.furstenau@nau.edu}}
+~
+\textbf{Website:
+\href{http://tfursten.github.io}{http://tfursten.github.io}}
+~
+\textbf{Github:
+\href{https://github.com/tfursten}{https://github.com/tfursten}}
+~
+\textbf{Bitbucket:
+\href{https://bitbucket.org/TaraFurstenau}{https://bitbucket.org/TaraFurstenau}}
+%
+\section{Skills}
+\subsection{Programming Languages}
+~
+\textbf{Proficient:} C++, Python, R\newline
+\textbf{Familiar:} Julia, Mathematica, Rust, SQL
+\subsection{Visualization}
+Matplotlib, Seaborn, Lattice, ggplot2, ggtree, Graphviz
+\subsection{Markup \& Typesetting}
+HTML, Markdown, \LaTeX
+\subsection{Systems}
+Unix, Linux, Windows, Macintosh OS X
+\subsection{Other}
+Version Control Systems: Git, Github, Bitbucket
+%
+\end{aside}
 
 
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{Research Experience}
+\begin{entrylist}
+\entry
+{2016--Present}{Postdoctoral Scholar {\normalfont in Viacheslav Fofanov's lab}}
+{\\The School of Informatics, Computing, and Cyber Systems $\cdotp$ Northern Arizona University $\cdotp$ Flagstaff, AZ}{\vspace{-0.3cm}}
+\entry
+{2013--2016}{Graduate Student {\normalfont in Reed Cartwright's Lab}}
+{\\Center for Human and Comparative Genomics $\cdotp$ The Biodesign Institute $\cdotp$ Arizona State University $\cdotp$ Tempe, AZ}{\vspace{-0.3cm}}
+\entry
+{2010--2013}{Research Associate {\normalfont in Roberto Gaxiola's Lab}}
+{\\School of Life Sciences $\cdotp$ Arizona State University $\cdotp$ Tempe, AZ}
+{\vspace{-0.3cm}}
+\entry
+{2009--2010}{Undergraduate Student Researcher {\normalfont in Lei Lei's Lab}}
+{\\School of Life Sciences $\cdotp$ Arizona State University $\cdotp$ Tempe, AZ}
+{\vspace{-0.3cm}}
+\end{entrylist}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2010--2016}
+{Ph.D. {\normalfont in Molecular and Cellular Biology}}
+{Arizona State University\\
+Advisor: Reed Cartwright\\
+Dissertation: Spatial Genetic Structure under Limited Dispersal: Theory, Methods and Consequences of Isolation-by-Distance
+}
+{\vspace{-0.3cm}}
+%------------------------------------------------
+\entry
+{2008--2010}
+{B.S. {\normalfont in Bioinformatics and Genomics}}
+{Arizona State University\\
+Dean's List $\cdotp$ \italicasecond{magna cum laude} }{\vspace{-0.3cm}}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Publications
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+\textbf{Furstenau, TN}, and RA Cartwright (2017). The role of self-incompatibility systems in the prevention of bi-parental inbreeding. \italica{PeerJ Preprints}. \textbf{\href{| https://doi.org/10.7287/peerj.preprints.3042v1}{doi:10.7287/peerj.preprints.3042v1}}
+
+\textbf{Furstenau, TN}, and RA Cartwright (2016). The effect of the dispersal kernel on isolation-by-distance in a continuous population. \italica{PeerJ} 4:e1848. \textbf{\href{https://doi.org/10.7717/peerj.1848}{doi:10.7717/peerj.1848}}
+
+Pizzio GA, Paez-Valencia J, Khadilkar AS, Regmi K, Patron-Soberano A, Zhang S, Sanchez-Lares J, \textbf{Furstenau T}, Li J, Sanchez-Gomez C, Valencia-Mayoral P, Yadav UP, Ayre BG and RA Gaxiola (2015).\italica{ Arabidopsis} proton-pumping pyrophosphatase AVP1 expresses strongly in phloem where it is required for PPi metabolism and photosynthate partitioning. \italica{Plant Physiology} 167:1541-1553.\\ \textbf{\href{http://dx.doi.org/10.1104/pp.114.254342}{doi:10.1104/pp.114.254342}}
 
 
 
-%--------------------------------------------------------------------------------------------
-%                                TEACHING EXPERIENCE
-%--------------------------------------------------------------------------------------------
-\section*{Teaching Experience}
-\subsection*{Arizona State University}
-Courses:\\
-\begin{tabularx}{\linewidth}{llX}
-2014&General Genetics& Head TA\\
-2014& Introduction to Computational Molecular Biology& Innovative TA\\
-2013&Concepts in Plant Biology iCourse& Instructor\\
-2011-2015&General Genetics&Teaching Associate\\
-2011&General Biology I \& 2 Laboratory& Teaching Associate\\
-2010&Genetic Engineering and Society Laboratory&Teaching Associate\\\\
-\end{tabularx}
-Undergraduate Mentorship:\\
-\begin{tabularx}{\linewidth}{lX}
-2011-2013&Honors Thesis Mentor $\cdotp$ Sean Wilson\\
-&Wilson S, Furstenau T, and R Gaxiola. Characterization of Transgenic \textit{Arabidopsis thaliana} Overexpressing a Type I H\textsuperscript{+} Pyrophosphatase and the Phloem Lipid-Associated Family Protein. \href{http://hdl.handle.net/2286/R.I.23607}{http://hdl.handle.net/2286/R.I.23607}\\
-\end{tabularx}
 
 
-%--------------------------------------------------------------------------------------------
-%                                AWARDS
-%--------------------------------------------------------------------------------------------
-\section*{Awards}
-\begin{tabularx}{\linewidth}{llX}
-2015 & ASU &Graduate Education Travel Award\\
-2015 & ASU &School of Life Sciences Travel Award\\
-\end{tabularx}
+%----------------------------------------------------------------------------------------
+%	Presentations
+%----------------------------------------------------------------------------------------
 
-%--------------------------------------------------------------------------------------------
-%                                SERVICE
-%--------------------------------------------------------------------------------------------
-\section*{Service and Outreach}
-\begin{tabularx}{\linewidth}{lX}
-2016-present & Software Carpentry Certified Instructor\\
-2015 &Molecular and Cellular Biology and Microbiology Retreat Poster Judge\\
-2015 &Software Carpentry Workshop Helper\\
-2015 &Night of the Open Door Volunteer\\
-2010-present &Ask-A-Biologist Volunteer Corespondent\\
-2011-2013&Green Labs Initiative Coordinator and Promoter\\
-2012-2013&Phosphorus Sustainability Research Coordination Network Core Participant\\
-2011-2012&Obama Scholars Mentor\\
-\end{tabularx}
-%--------------------------------------------------------------------------------------------
-%                                SOCIETY MEMBERSHIPS
-%--------------------------------------------------------------------------------------------
-\section*{Society Memberships}
-Society for the Study of Evolution\\
-Society for Molecular Biology and Evolution\\
-Graduate Integrative Society for Environmental Interdisciplinary Research\\
-Central Arizona Chapter of the Association for Women in Science
-%--------------------------------------------------------------------------------------------
-%                                PROFESSIONAL DEVELOPMENT
-%--------------------------------------------------------------------------------------------
-\section*{Professional Development}
-\begin{tabularx}{\linewidth}{l X}
-2013&Next Generation Population Genomics for Non-model Taxa Workshop\\
-&American Genetics Association $\cdotp$ Cornell University $\cdotp$ Ithica, NY\\
+\section{Presentations}
+\subsection{Talks}
+\begin{entrylist}
+\entry
+{May 2017}{\normalfont Strain-level pathogen identification using targeted PCR amplicon sequencing}{\\The Biodefense and Disease Ecology Center Meeting\\The Pathogen and Microbiome Institute $\cdotp$ Flagstaff, AZ}
+{\vspace{-0.3cm}}
+\end{entrylist}
+\begin{entrylist}
+\entry
+{Dec 2015}{\normalfont Spatial genetic structure under limited dispersal}{\\Informatics and Computing Program  $\cdotp$ Flagstaff, AZ}
+{\vspace{-0.3cm}}
+\end{entrylist}
+\begin{entrylist}
+\entry
+{Sep 2015}{\normalfont Bayesian estimation of neighborhood size using composite marginal likelihoods}{\\Molecular and Cellular Biology Colloquium $\cdot$ The Biodesign Institute $\cdot$ Tempe, AZ}
+{\vspace{-0.3cm}}
+\end{entrylist}
+\begin{entrylist}
+\entry
+{July 2015}{\normalfont Bayesian estimation of neighborhood size using composite marginal likelihoods}{\\Society for Molecular Biology and Evolution $\cdotp$ Vienna, Austria}
+{\vspace{-0.3cm}}
+\end{entrylist}
+\begin{entrylist}
+\entry
+{Sep 2014}{\normalfont Evolution of Self-Incompatibility: Investigating the role of self-incompatibility systems in the prevention of biparental inbreeding}{\\Molecular and Cellular Biology Colloquium $\cdot$ The Biodesign Institute $\cdot$ Tempe, AZ}
+{\vspace{-0.3cm}}
+\end{entrylist}
+\begin{entrylist}
+\entry
+{Oct 2013}{\normalfont Evolution of Self-Incompatibility: Investigating the role of self-incompatibility systems in the prevention of biparental inbreeding}{\\Molecular and Cellular Biology Colloquium $\cdot$ Arizona State University $\cdot$ Tempe, AZ}
+{\vspace{-0.3cm}}
+\end{entrylist}
+\begin{entrylist}
+\entry
+{March 2012}{\normalfont The roll of the H\textsuperscript{+}-pyrophosphatase in the regulation of sucrose transport in plants}{\\Molecular and Cellular Biology Colloquium $\cdot$ Arizona State University $\cdot$ Tempe, AZ}
+{\vspace{-0.3cm}}
+\end{entrylist}
 
-2011& Univector Plasmid-Fusion System training with Kendal Hirschi\\
-&Childrens Nutritional Research Center $\cdotp$ Baylor College of Medicine $\cdotp$ Houston, TX\\
+\subsection{Posters}
+\begin{entrylist}
+\entry
+{June 2017}{\normalfont Effects of Exposure on Bat Guano Microbiome}{\\Microbiome Bioinformatics with QIIME 2 Workshop $\cdot$ Las Vegas, NV}
+{\vspace{-0.3cm}}
+\end{entrylist}
 
-\end{tabularx}
-%--------------------------------------------------------------------------------------------
-%                                PROGRAMMING LANGUAGES
-%--------------------------------------------------------------------------------------------
-\section*{Programming Languages}
-\textsc{C++, python, R, bash, \LaTeX, html/css, OpenBUGS, Mathematica}
+\begin{entrylist}
+\entry
+{June 2017}{\normalfont Preemptive establishment of baseline bat microbiome diversity before White-Nose Syndrome strikes the Southwest}{\\Microbiome Bioinformatics with QIIME 2 Workshop $\cdot$ Las Vegas, NV\\Presented by Nicole Pagel (Graduate Student Mentee)}
+{\vspace{-0.3cm}}
+\end{entrylist}
+
+\begin{entrylist}
+\entry
+{June 2014}{\normalfont The effect of the dispersal distribution on isolation-by-distance in a continuous population}{\\Society for the Study of Evolution $\cdotp$ Raleigh, NC}
+{\vspace{-0.3cm}}
+\end{entrylist}
+
+\begin{entrylist}
+\entry
+{March 2014}{\normalfont Characterization of Transgenic \italica{Arabidopsis thaliana} overexpressing \italica{AVP1} and \italica{PLAFP}}{\\Arizona State University Undergraduate Research Poster Symposium $\cdotp$ Tempe, AZ\\
+Presented by Sean Wilson (Undergraduate Student Mentee)}
+{\vspace{-0.3cm}}
+\end{entrylist}
+
+\begin{entrylist}
+\entry
+{Aug 2012}{\normalfont H\textsuperscript{+}-PPase AVP1 is necessary for phloem development in \italica{Arabidopsis thaliana}}{\\Molecular and Cellular Biology Graduate Student Retreat $\cdotp$ Tempe, AZ}
+{\vspace{-0.3cm}}
+\end{entrylist}
+
+\begin{entrylist}
+\entry
+{July 2012}{\normalfont H\textsuperscript{+}-PPase AVP1 is necessary for phloem development in \italica{Arabidopsis thaliana}}{\\American Society of Plant Biologists Annual Meeting $\cdotp$ Austin, TX}
+{\vspace{-0.3cm}}
+\end{entrylist}
+
+
+%-------------------------------
+%Teaching Experience
+%-------------------------------
+\section{Teaching Experience}
+\subsection{\textbf{Courses:}}
+\subsection{Arizona State University}
+\begin{entrylist}
+\entry{Fall 2014}{BIO340 {\normalfont General Genetics}}{Head Teaching Associate}
+{\vspace{-0.3cm}}
+\entry{Spring 2014}{BIO355 {\normalfont Introduction to Computational Molecular Biology}}{Innovative Teaching Associate}{\vspace{-0.3cm}}
+\entry{Fall 2013}{PLB108 {\normalfont Concepts in Plant Biology iCourse}}{Instructor}{\vspace{-0.3cm}}
+\entry{Spring 2013}{BIO340 {\normalfont General Genetics}}{Teaching Associate}{\vspace{-0.3cm}}
+\entry{Fall 2012}{BIO340 {\normalfont General Genetics}}{Teaching Associate}{\vspace{-0.3cm}}
+\entry{Spring 2012}{BIO340 {\normalfont General Genetics}}{Teaching Associate}{\vspace{-0.3cm}}
+\entry{Fall 2011}{BIO340 {\normalfont General Genetics}}{Teaching Associate}{\vspace{-0.3cm}}
+\entry{Summer 2011}{BIO181 {\normalfont General Biology I Laboratory}}{Teaching Associate}{\vspace{-0.3cm}}
+\entry{Spring 2011}{BIO182 {\normalfont General Biology II Laboratory}}{Teaching Associate}{\vspace{-0.3cm}}
+\entry{Fall 2010}{MBB343 {\normalfont Genetic Engineering and Society Laboratory}}{Teaching Associate}{\vspace{-0.3cm}}
+\end{entrylist}
+\subsection{Northern Arizona University}
+\begin{entrylist}
+\entry{Spring 2017}{INF503 {\normalfont Large-Scale Data Structures and Organization}}{Guest Lecture}
+{\vspace{-0.3cm}}
+\end{entrylist}
+
+\pagebreak
+\subsection{\textbf{Workshops:}}
+\begin{entrylist}
+\entry{May 2016}{Software Carpentry {\normalfont Instructor }}{Biodesign Institute $\cdotp$ ASU $\cdotp$ Tempe, AZ}{\vspace{-0.3cm}}
+\entry{June 2015}{Software Carpentry {\normalfont Helper }}{Wrigley Institute of Sustainability $\cdotp$ ASU $\cdotp$ Tempe, AZ}{\vspace{-0.3cm}}
+\end{entrylist}
+
+\subsection{\textbf{Mentoring:}}
+\begin{entrylist}
+\entry{2011--2013}{Honor's Thesis Mentor \normalfont Sean Wilson}{\\Thesis: Wilson S, \textbf{Furstenau T}, and R Gaxiola. Characterization of Transgenic \italicasecond{Arabidopsis thaliana} Overexpressing a Type I H\textsuperscript{+}-Pyrophosphatase and the Phloem Lipid-Associated Family Protein.}
+{\vspace{-0.3cm}}
+\end{entrylist}
+
+%--------------------------------
+%Service and Outreach
+%--------------------------------
+\section{Service and Outreach}
+\begin{itemize}
+\item Software Carpentry Certified Instructor
+\item Night of the Open Door Volunteer
+\item Ask-A-Biologist Volunteer Corespondent
+\item Green Labs Initiative Coordinator and Promoter
+\item Phosphorus Sustainability Research Coordination Network Core Participant
+\item Obama Scholars Mentor
+\end{itemize}
+
+
+%---------------------------------
+%Professional Development
+%---------------------------------
+\section{Professional Development}
+\begin{entrylist}
+\entry{June 2017}{\normalfont Microbiome Bioinformatics with QIIME 2 Workshop}{\\QIIME Development Team $\cdotp$ Las Vegas, NV}{\vspace{-0.3cm}}
+
+\entry{July 2013}{\normalfont Next Generation Population Genomics for Non-model Taxa Workshop}{\\American Genetics Association $\cdotp$ Cornell University $\cdotp$ Ithica, NY}{\vspace{-0.3cm}}
+
+\entry{Dec 2011}{\normalfont Univector Plasmid-Fusion System training with Kendal Hirschi}{\\Childrens Nutritional Research Center $\cdotp$ Baylor College of Medicine $\cdotp$ Houston, TX}{\vspace{-0.3cm}}
+\end{entrylist}
+
+
+%---------------------------------
+%Professional Society
+%---------------------------------
+\section{Society Memberships}
+\begin{itemize}
+\item Society for the Study of Evolution
+\item Society for Molecular Biology and Evolution
+\item Central Arizona Chapter of the Association for Women in Science
+\end{itemize}
 \end{document}
