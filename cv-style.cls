@@ -21,19 +21,37 @@
 \definecolor{white}{RGB}{255,255,255}
 
 \definecolor{darkgray}{HTML}{333333}
-\definecolor{gray}{HTML}{565656}
-\definecolor{lightgray}{HTML}{D7CEC7}
-\definecolor{highlight}{HTML}{056571}
-\definecolor{linc}{HTML}{008F95}
+\definecolor{gray}{HTML}{5A5A5A}
+\definecolor{black}{HTML}{000000}
+\definecolor{lightgray}{HTML}{818181}
+\definecolor{midgray}{HTML}{787878}
+\definecolor{darkteal}{HTML}{03434B}
+\definecolor{teal}{HTML}{056571}
+\definecolor{lightteal}{HTML}{50939B}
 \definecolor{dark}{HTML}{565656}
-\definecolor{light}{HTML}{ede9e6}
-\definecolor{secondary}{HTML}{76323F}
-\definecolor{tertiary}{HTML}{6BBAA7}
+\definecolor{light}{HTML}{f7f7f7}
+\definecolor{maroon}{HTML}{711105}
+\definecolor{seafoam}{HTML}{5AA2AA}
 \definecolor{date}{HTML}{A4A4A4}
+
+
+%%% Grayscale
+% \colorlet{secondary}{black}
+% \colorlet{tertiary}{black}
+% \colorlet{linc}{black}
+% \colorlet{header}{black}
+% \colorlet{fillheader}{white}
+% \colorlet{textcolor}{black}
+% \colorlet{headercolor}{black}
+
+%%% Teal palette
+\colorlet{secondary}{darkteal}
+\colorlet{tertiary}{teal}
+\colorlet{linc}{lightteal}
 \colorlet{header}{white}
-\colorlet{fillheader}{dark}
-\colorlet{textcolor}{gray}
-\colorlet{headercolor}{highlight}
+\colorlet{fillheader}{teal}
+\colorlet{textcolor}{darkgray}
+\colorlet{headercolor}{darkteal}
 
 
 
@@ -42,8 +60,7 @@
 %----------------------------------------------------------------------------------------
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
-
+\RequirePackage{unicode-math}
 \newfontfamily\bodyfont{Roboto-Regular}[Path=fonts/]
 \newfontfamily\bodyfontit{Roboto-LightItalic}[Path=fonts/]
 \newfontfamily\thinfont{Roboto-Thin}[Path=fonts/]
