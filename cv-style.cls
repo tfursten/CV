@@ -62,16 +62,32 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage{unicode-math}
 \newfontfamily\bodyfont{Roboto-Regular}[Path=fonts/]
+\newfontfamily\bodyfontitreg{Roboto-Italic}[Path=fonts/]
 \newfontfamily\bodyfontit{Roboto-LightItalic}[Path=fonts/]
+\newfontfamily\bodyfontbfit{Roboto-BoldItalic}[Path=fonts/]
 \newfontfamily\thinfont{Roboto-Thin}[Path=fonts/]
 \newfontfamily\headingfont{RobotoCondensed-Bold}[Path=fonts/]
+\newfontfamily\headingit{RobotoCondensed-BoldItalic}[Path=fonts/]
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor, Path = fonts/]{Roboto-Light}
 
+\newcommand{\bodycolor}[1]{%
+  {\color{secondary}\bodyfont #1}%
+}
+
 \newcommand{\italicasecond}[1]{%
     {\color{secondary}\bodyfontit #1}%
 }
+
+\newcommand{\italicasecondbf}[1]{%
+    {\color{secondary}\headingit #1}%
+}
+
+\newcommand{\italicabodycolor}[1]{%
+    {\color{secondary}\bodyfontitreg #1}%
+}
+
 \newcommand{\italica}[1]{%
     {\color{gray}\bodyfontit #1}%
 }
@@ -169,22 +185,25 @@
 %----------------------------------------------------------------------------------------
 % List environment %
 %----------------------------------------------------------------------------------------
-
+\RequirePackage{longtable}
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \setlength{\LTpre}{5pt}
+  \setlength{\LTpost}{0pt}
+  \setlength\LTleft{0pt}
+  \setlength\LTright{0pt}
+  \begin{longtable}{@{\extracolsep{\fill}}ll}
 }{%
-  \end{tabular*}
+  \end{longtable}
 }
 \renewcommand{\bfseries}{\headingfont\color{secondary}}
-\newcommand{\entry}[4]{%
-  #1&\parbox[t]{12.6cm}{%
-    \textbf{#2}%
+\newcommand{\entry}[5]{%
+  #2&\parbox[t]{#1cm}{%
+    \textbf{#3}%
     \hfill%
-    {\footnotesize\addfontfeature{Color=secondary} #3}\\%
-    #4\vspace{\parsep}%
+    {\footnotesize\addfontfeature{Color=secondary} #4}\\%
+    #5\vspace{\parsep}%
   }\\}
-
 %----------------------------------------------------------------------------------------
 % Side block %
 %----------------------------------------------------------------------------------------
@@ -215,7 +234,7 @@
 % Other tweaks %
 %----------------------------------------------------------------------------------------
 
-\RequirePackage[left=6cm,top=1cm,right=.5cm,bottom=1cm,nohead,nofoot]{geometry}
+\RequirePackage[left=6.5cm,top=1cm,right=1.5cm,bottom=1cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
     pdftitle={CV/Resume \textbar{} Tara Furstenau},
